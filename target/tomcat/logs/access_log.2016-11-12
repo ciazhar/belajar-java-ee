@@ -1,2 +1,0 @@
-127.0.0.1 - - [12/Nov/2016:03:05:26 +0700] "GET /tutorial-javawebapp/ HTTP/1.1" 200 506 http-bio-8080-exec-1 2013
-127.0.0.1 - - [12/Nov/2016:03:05:26 +0700] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-2 0

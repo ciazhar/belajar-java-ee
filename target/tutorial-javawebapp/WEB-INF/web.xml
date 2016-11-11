@@ -1,0 +1,71 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  //1
+  <servlet>
+    <servlet-name>Halo</servlet-name>
+    <servlet-class>com.web.servlet.HaloController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Halo</servlet-name>
+    <url-pattern>/selamat-datang</url-pattern>
+  </servlet-mapping>
+  //2
+  <servlet>
+    <servlet-name>ServletKedua</servlet-name>
+    <servlet-class>com.web.servlet.ServletKedua</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletKedua</servlet-name>
+    <url-pattern>/ServletKedua</url-pattern>
+  </servlet-mapping>
+  //3
+  <servlet>
+    <servlet-name>GetParameterServlet</servlet-name>
+    <servlet-class>com.web.servlet.GetParameterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetParameterServlet</servlet-name>
+    <url-pattern>/parameter</url-pattern>
+  </servlet-mapping>
+  //4
+  <servlet>
+    <servlet-name>GetParameterValuesServlet</servlet-name>
+    <servlet-class>com.web.servlet.GetParameterValuesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetParameterValuesServlet</servlet-name>
+    <url-pattern>/getParameterValuesServlet</url-pattern>
+  </servlet-mapping>
+  //5
+  <servlet>
+    <servlet-name>GetParameterNames</servlet-name>
+    <servlet-class>com.web.servlet.GetParameterNames</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetParameterNames</servlet-name>
+    <url-pattern>/identitas-server</url-pattern>
+  </servlet-mapping>
+  //5
+  <servlet>
+    <servlet-name>JPEGOutputServlet</servlet-name>
+    <servlet-class>com.web.servlet.JPEGOutputServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JPEGOutputServlet</servlet-name>
+    <url-pattern>/output-gambar</url-pattern>
+  </servlet-mapping>
+  <session-config>
+    <session-timeout>
+      30
+    </session-timeout>S
+  </session-config>
+  <welcome-file-list>
+    <welcome-file>
+      index.jsp
+    </welcome-file>
+  </welcome-file-list>
+</web-app>
